@@ -39,20 +39,3 @@ jobs:
           POSTGRES_URL_NON_POOLING: file:./dev.db
           NEXTAUTH_SECRET: ci-test-secret-key
           NEXTAUTH_URL: http://localhost:3000
-
-  deploy-vercel:
-    runs-on: ubuntu-latest
-    name: Deploy to Vercel
-    needs: lint-and-build
-    if: github.ref == 'refs/heads/main'
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Deploy to Vercel
-        uses: amondnet/vercel-action@v25
-        with:
-          vercel-token: ${{ secrets.VERCEL_TOKEN }}
-          vercel-org-id: ${{ secrets.VERCEL_ORG_ID }}
-          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID }}
-          vercel-args: '--prod'
