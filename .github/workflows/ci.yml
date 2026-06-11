@@ -33,7 +33,7 @@ jobs:
         run: npm run lint
 
       - name: Build
-        run: next build
+        run: npx next build
         env:
           POSTGRES_PRISMA_URL: file:./dev.db
           POSTGRES_URL_NON_POOLING: file:./dev.db
