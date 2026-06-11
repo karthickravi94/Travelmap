@@ -1,0 +1,11 @@
+{
+  "buildCommand": "prisma generate && next build",
+  "framework": "nextjs",
+  "installCommand": "npm install",
+  "git": {
+    "deploymentEnabled": {
+      "main": true,
+      "claude/travelmap-web-app-kfk4sf": true
+    }
+  }
+}
