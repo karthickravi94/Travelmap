@@ -33,9 +33,10 @@ jobs:
         run: npm run lint
 
       - name: Build
-        run: npm run build
+        run: next build
         env:
-          DATABASE_URL: file:./dev.db
+          POSTGRES_PRISMA_URL: file:./dev.db
+          POSTGRES_URL_NON_POOLING: file:./dev.db
           NEXTAUTH_SECRET: ci-test-secret-key
           NEXTAUTH_URL: http://localhost:3000
 
