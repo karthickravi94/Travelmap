@@ -17,7 +17,7 @@ export function StatsPreview() {
               Track every adventure with beautiful statistics
             </h2>
             <p className="text-gray-500 dark:text-gray-400 text-lg mb-8 leading-relaxed">
-              Watch your travel percentage grow. See which continents you've conquered and discover how much of the world is still waiting for you.
+              Watch your travel percentage grow. See which continents you&apos;ve conquered and discover how much of the world is still waiting for you.
             </p>
             <div className="space-y-4">
               {[

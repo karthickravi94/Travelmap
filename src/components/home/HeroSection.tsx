@@ -80,7 +80,7 @@ export function HeroSection({ session }: HeroSectionProps) {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-xl text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Pin every place you've visited, cherish your travel memories, and plan your next adventure on an interactive world map.
+          Pin every place you&apos;ve visited, cherish your travel memories, and plan your next adventure on an interactive world map.
         </motion.p>
 
         <motion.div
