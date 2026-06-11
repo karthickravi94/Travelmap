@@ -4,7 +4,6 @@ import { PrismaAdapter } from '@auth/prisma-adapter'
 import { prisma } from './prisma'
 import bcrypt from 'bcryptjs'
 
-// Auto-detect URL for Vercel deployments
 const getUrl = () => {
   if (process.env.NEXTAUTH_URL) return process.env.NEXTAUTH_URL
   if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`
